@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div id="calc">
+    <input type="text" id="display">
+    <button onclick="sin()">sin</button>
+    <button onclick="cos()">cos</button>
+    <button onclick="tan()">tan</button>
+
+
+    <label>
+        <input type="radio" name="option" value="Degrees" onclick="toggleRadio(this)">
+        Deg        
+    </label>
+    <label>
+        <input type="radio" name="option" value="Radians" onclick="toggleRadio(this)"> 
+        Rad
+    </label>    
+
+
+
+    <button class="numbers" onclick="append('7')">7</button>
+    <button class="numbers" onclick="append('8')">8</button>
+    <button class="numbers" onclick="append('9')">9</button>
+    <button class="operators" onclick="append('+')">+</button>
+    <button onclick="deleteLast()">Back</button>
+
+    <button onclick="sinInverse()">sin<sup>-1</sup></button>
+    <button onclick="cosInverse()">cos<sup>-1</sup></button>
+    <button onclick="tanInverse()">tan<sup>-1</sup></button>
+    <button onclick="append(Math.PI)">&pi;</button>
+    <button onclick="append(Math.E)">e</button>
+    <button class="numbers" onclick="append('4')">4</button>
+    <button class="numbers" onclick="append('5')">5</button>
+    <button class="numbers" onclick="append('6')">6</button>
+    <button class="operators" onclick="append('-')">-</button>
+    <button onclick="ans()">Ans</button>
+
+    <button onclick="powerY()">x<sup>y</sup></button>
+    <button onclick="cube()">x<sup>3</sup></button>
+    <button onclick="square()">x<sup>2</sup></button>
+    <button onclick="exp()">e<sup>x</sup></button>
+    <button onclick="tenPowerX()">10<sup>x</sup></button>
+    <button class="numbers" onclick="append('1')">1</button>
+    <button class="numbers" onclick="append('2')">2</button>
+    <button class="numbers" onclick="append('3')">3</button>
+    <button onclick="append('*')">&times;</button>
+    <button onclick="memoryAdd()">M+</button>
+
+    <button onclick="yRoot()"><sup>y</sup>&#8730;x</button>
+    <button onclick="cubeRoot()"><sup>3</sup>&#8730;x</button>
+    <button onclick="sqrt()">&#8730;x</button>
+    <button onclick="ln()">ln</button>
+    <button onclick="log10()">log</button>
+    <button class="numbers" onclick="append('0')">0</button>
+    <button class="numbers" onclick="append('.')">.</button>
+    <button onclick="expInput()">EXP</button>
+    <button  class="operators" onclick="append('/')">&divide;</button>
+    <button onclick="memorySubtract()">M-</button>
+
+    <button onclick="append('(')">(</button>
+    <button onclick="append(')')">)</button>
+    <button onclick="inverse()">1/x</button>
+    <button class="operators" onclick="percent()">%</button>
+    <button onclick="factorial()">n!</button>
+    <button onclick="plusMinus()">&plusmn;</button>
+    <button onclick="randomNum()">RND</button>
+    <button id="ac" onclick="allClear()">AC</button>
+    <button id="calculate" onclick="calculate()">=</button>
+    <button onclick="memoryRecall()">MR</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
