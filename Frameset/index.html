@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frameset</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        h1 {
+            color: rgb(203, 20, 20);
+        }
+    </style>
+</head>
+    <frameset rows="10%,80%,10%" border="5px" noresize>
+        <frame src="header.html" name="frame1" scrolling="no" frameborder="1">
+            <frameset cols="20%,60%,20%" border="5px" noresize>
+                <frame src="sideBar.html" name="frame2" scrolling="auto" frameborder="0">
+                <frame src="mainContent.html" name="frame3" scrolling="no" frameborder="1">
+                <frame src="sideBar.html"  name="frame4" scrolling="no" frameborder="0">
+            </frameset>
+        <frame src="footer.html" name="frame5" scrolling="no" frameborder="1">
+            <noframes>
+                <body>
+                    <h1>404</h1>
+                    <h2>&#128533; Oops! Frameset Not Supported</h2>
+                    <p>Your browser does not support frames.</p>
+                </body>
+            </noframes>
+    </frameset>
+</html>
